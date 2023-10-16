@@ -18,7 +18,7 @@ applications:
             - nvm use $VERSION_NODE_14
             - ng build --configuration=$BUILD_ENV --aot --vendor-chunk --common-chunk --delete-output-path --buildOptimizer
       artifacts:
-        baseDirectory: dist/wedding
+        baseDirectory: /
         files:
           - '**/*'
       cache:
