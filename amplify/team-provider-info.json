@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-wedding-dev-142846-authRole",
+      "UnauthRoleArn": "arn:aws:iam::281186247027:role/amplify-wedding-dev-142846-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::281186247027:role/amplify-wedding-dev-142846-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-wedding-dev-142846-deployment",
+      "UnauthRoleName": "amplify-wedding-dev-142846-unauthRole",
+      "StackName": "amplify-wedding-dev-142846",
+      "StackId": "arn:aws:cloudformation:us-east-2:281186247027:stack/amplify-wedding-dev-142846/50b8ea70-6c30-11ee-b0c6-0a02ba9fb47b",
+      "AmplifyAppId": "d1znzgjtdae327"
+    },
+    "categories": {
+      "auth": {
+        "wedding": {}
+      }
+    }
+  }
+}
