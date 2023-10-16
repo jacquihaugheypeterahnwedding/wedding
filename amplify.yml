@@ -1,0 +1,26 @@
+version: 1
+applications:
+  - appRoot: angular
+    backend:
+      phases:
+        build:
+          commands:
+            - amplifyPush --simple
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - nvm use $VERSION_NODE_14
+            - npm install
+            - npm install -g @angular/cli@10.1.7
+        build:
+          commands:
+            - nvm use $VERSION_NODE_14
+            - ng build --configuration=$BUILD_ENV --aot --vendor-chunk --common-chunk --delete-output-path --buildOptimizer
+      artifacts:
+        baseDirectory: dist/myapp
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
