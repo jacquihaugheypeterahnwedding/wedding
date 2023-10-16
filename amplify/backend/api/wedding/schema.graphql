@@ -1,0 +1,40 @@
+type Restaurant @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  description: String
+  website: AWSURL
+  image: String
+  phone: AWSPhone
+  address: String
+}
+
+type Hotel @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  address: String
+  phone: AWSPhone
+  description: String
+  website: AWSURL
+  image: String
+}
+
+type Event @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  date: AWSDate
+  start: AWSTime
+  stop: AWSTime
+  image: String
+  description: String
+  address_name: String
+  address: String
+  groups: String
+}
+
+type UserSettings @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  user: String
+  language: String
+  email: AWSEmail
+  send_emails: Boolean
+}
